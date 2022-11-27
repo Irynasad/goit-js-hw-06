@@ -22,9 +22,8 @@ function createBoxes(amount) {
     refs.boxes.append(nextBox);
   }
 }
-refs.btnDestroy.addEventListener("click", destroyBoxes());
+refs.btnDestroy.addEventListener("click", destroyBoxes);
 function destroyBoxes() {
-  console.log(refs.boxes);
   refs.boxes.innerHTML = "";
 }
 
