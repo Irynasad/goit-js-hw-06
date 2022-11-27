@@ -7,8 +7,8 @@ const refs = {
 
 refs.btnCreate.addEventListener("click", createBoxes);
 
-function createBoxes(amount) {
-  amount = refs.input.value;
+function createBoxes() {
+  const amount = refs.input.value;
   let step = 10;
   let height = 30;
   let width = 30;

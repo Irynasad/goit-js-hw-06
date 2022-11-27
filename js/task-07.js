@@ -4,8 +4,7 @@ const refs = {
 };
 
 function onFontChange(event) {
-  refs.input = Number(event.target.value);
-  refs.span.style.fontSize = `${refs.input}px`;
+  refs.span.style.fontSize = `${Number(event.target.value)}px`;
 }
 
 refs.input.addEventListener("click", onFontChange);

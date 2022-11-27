@@ -11,14 +11,14 @@ function onFormSubmit(event) {
     elements: { email, password },
   } = event.currentTarget;
 
-  const user = {};
-  user.email = email.value;
-  user.password = password.value;
-
-  if (email.value !== "" && password.value !== "") {
-    console.log(user);
-  } else {
+  if (email.value === "" || password.value === "") {
     alert("Все поля формы должны быть заполнены");
+    return;
+  } else {
+    const user = {};
+    user.email = email.value;
+    user.password = password.value;
+    console.log(user);
   }
   refs.form.reset();
 }
