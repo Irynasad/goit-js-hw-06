@@ -22,6 +22,7 @@ function createBoxes() {
     refs.boxes.append(nextBox);
   }
 }
+refs.btnDestroy.addEventListener("click", destroyBoxes);
 function destroyBoxes() {
   refs.boxes.innerHTML = "";
 }
